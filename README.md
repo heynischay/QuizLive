@@ -10,6 +10,12 @@ A real-time quiz platform: create quizzes, host live sessions, and join as a pla
 - **Live quiz** — Real-time gameplay over WebSockets (host controls, guest join/submit, lobby, leaderboard)
 - **REST API** — Auth and quiz CRUD with validation (Zod) and error handling
 
+## About this project
+
+QuizLive was created as a learning project to explore WebSockets and real-time communication. The current WebSocket setup relies on a single server instance, so deployments with multiple server instances require sticky sessions to keep clients connected to the appropriate instance.
+
+Pub/sub support and multi-server support using Redis as an in-memory data store are planned for a future update.
+
 ## Tech stack
 
 | **Client** | React 19, TypeScript, Vite, React Router, TanStack Query, Zustand, Axios, Zod, Tailwind CSS, Lucide icons |
